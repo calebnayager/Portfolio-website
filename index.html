@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <meta name="description" content="Caleb Nayager, a freelance web developer offering web solutions, UI/UX design, and consulting services.">
+    <meta property="og:title" content="Caleb Nayager - Freelance Web Developer">
+    <meta property="og:description" content="Portfolio of Caleb Nayager, a freelance web developer specializing in front-end and back-end web development.">
+    <meta property="og:image" content="path/to/image.jpg">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+    <label for="theme-toggle" class="theme-icon">🌙</label>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Caleb Nayager</h1>
+        <h3>And I'm a Web Developer <span class="text"></span></h3>
+
+        <p class="highlight-text">
+            With a strong foundation in HTML, CSS, and JavaScript, I specialize in building sleek and functional web solutions tailored to my clients’ needs. Whether it’s a dynamic business website, an interactive portfolio, or a custom web application, I focus on delivering high-quality results that enhance user experience and drive engagement. Let’s collaborate and bring your vision to life!
+        </p>
+        <div class="home-sci">
+            <a href="https://www.facebook.com/CalebNayager" class="social-link" target="_blank" rel="noopener noreferrer"> <i class="bx bxl-facebook"></i> </a>
+            <a href="https://www.instagram.com/caleb_nayager" class="social-link" target="_blank" rel="noopener noreferrer"> <i class="bx bxl-instagram"></i> </a>
+            <a href="https://wa.me/2718235695" class="social-link" target="_blank" rel="noopener noreferrer"> <i class="bx bxl-whatsapp"></i> </a>
+        </div>
+        <a href="#about" class="btn-box">More About Me</a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Freelance Web Developer</h4>
+        <p>
+            Hi, I'm Caleb Nayager, a passionate freelance web developer and consultant dedicated to creating dynamic, user-centric websites and digital solutions. I hold a Higher Certificate in IT from MANCOSA University, which has equipped me with a strong foundation in web technologies, programming, and problem-solving. With experience in front-end and back-end development, I specialize in crafting responsive, visually appealing, and high-performance websites tailored to meet the unique needs of businesses and individuals. My expertise spans HTML, CSS, JavaScript, and Java, along with modern frameworks and tools that enhance functionality and user experience.
+
+            Beyond coding, I offer consulting services, helping clients strategize and optimize their online presence through effective web solutions. Whether you're looking to launch a new website, improve an existing one, or need expert guidance on digital projects, I’m committed to delivering high-quality results. Let’s collaborate and bring your ideas to life!
+        </p>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <h2>My <span>Skills</span></h2>
+    <div class="skills-content">
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Java</li>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Principles</li>
+            <li>Version Control (Git & GitHub)</li>
+            <li>Basic SQL</li>
+        </ul>
+    </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <h2>My <span>Portfolio</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <h3>🧸 Haute Mini - Kids' Fashion Ecommerce Store</h3>
+            <p>
+                <strong>Haute Mini</strong> is a modern, fashion-forward ecommerce website built for a growing South African kids' clothing brand.<br> The platform features a fully responsive design, ensuring a seamless shopping experience across desktops, tablets, and mobile devices.
+            </p>
+            <p>
+                Key features include:
+            <ul>
+                <li>⭐ Interactive product ratings</li>
+                <li>🛒 A dynamic shopping cart with add/remove functionality and real-time item count</li>
+                <li>📱 Mobile-first responsive layout with intuitive navigation</li>
+                <li>🎨 Clean, creative UI</li>
+            </ul>
+            </p>
+            <a href=" https://calebnayager.github.io/Haute-Mini/" target="_blank" class="btn-box">Visit Website</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <h2>Contact <span>Me</span></h2>
+    <form action="https://formspree.io/f/xdkepkqj" method="POST">
+        <div class="input-box">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit" class="btn-box">Send Message</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

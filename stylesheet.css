@@ -1,0 +1,253 @@
+/* General reset for margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Default dark mode styles */
+body {
+  color: #ededed;
+  background: #111;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+  animation: slideTop 0.5s ease forwards;
+}
+
+.navbar a:hover {
+  color: #0ef;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('4k-wallpaper-astronomy-evening-galaxy.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 10% 0;
+}
+
+.home-content {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home-content h3, .home-content h1, .home-content p {
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+}
+
+.home-content h3 span {
+  color: #0ef;
+}
+
+.btn-box {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #081b29;  /* Button text color */
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+.btn-box:hover {
+  box-shadow: 0 0 100px cyan;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #888;
+  font-size: 14px;
+}
+
+.about, .skills, .contact, .portfolio {
+  padding: 80px 10%;
+  text-align: left;
+  color: #fff;
+}
+
+.about h2, .skills h2, .contact h2, .portfolio h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.skills-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.skills-content ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact form {
+  max-width: 600px;
+}
+
+@keyframes slideRight {
+  0% { transform: translateX(-100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideLeft {
+  0% { transform: translateX(100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Light theme styles */
+body.light-mode {
+  background: #f0f0f0;
+  color: #111;
+}
+
+/* Override text color globally for light mode */
+body.light-mode,
+body.light-mode * {
+  color: #111 !important;
+}
+
+/* Header styles */
+body.light-mode .header {
+  background: #fff;
+}
+
+body.light-mode .navbar a {
+  color: #111;
+}
+
+body.light-mode .navbar a:hover {
+  color: #0ef;
+}
+
+/* Button styles */
+body.light-mode .btn-box {
+  color: #081b29;
+  background: #0ef;
+}
+
+/* Social buttons */
+body.light-mode .social-buttons a,
+body.light-mode .home-sci a {
+  background: #0ef;
+  color: #081b29;
+}
+
+body.light-mode .social-buttons a:hover,
+body.light-mode .home-sci a:hover {
+  box-shadow: 0 0 100px cyan;
+  transform: scale(1.1);
+}
+
+/* Ensure all other color overrides as necessary */
+body.light-mode .footer {
+  background-color: #fff;
+  color: #111;
+}
+
+body.light-mode .about,
+body.light-mode .skills,
+body.light-mode .contact {
+  color: #111;
+}
+
+/* Social buttons styling */
+.social-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-buttons a,
+.home-sci a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #0ef;
+  color: #081b29;
+  font-size: 30px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  transition: 0.3s ease-in-out;
+}
+
+.social-buttons a:hover,
+.home-sci a:hover {
+  box-shadow: 0 0 100px cyan;
+  transform: scale(1.1);
+}
+
+
+body.light-mode .social-buttons a,
+body.light-mode .home-sci a {
+  background: #0ef;
+  color: #081b29;
+}
+
+body.light-mode .social-buttons a:hover,
+body.light-mode .home-sci a:hover {
+  box-shadow: 0 0 100px cyan;
+  transform: scale(1.1);
+}

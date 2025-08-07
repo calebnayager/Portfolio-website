@@ -11,6 +11,6 @@ This is a fully responsive portfolio built to present:
 - Links to my social profiles
 - Dark mode toggle and smooth animations for a modern UI/UX
 
-  Tech Stack
+  Tech Stack:
 - Frontend: HTML, CSS, JavaScript, Java  
 - Deployment: GitHub Pages

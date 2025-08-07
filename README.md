@@ -10,7 +10,7 @@ This is a fully responsive portfolio built to present:
 - A contact form for potential clients
 - Links to my social profiles
 - Dark mode toggle and smooth animations for a modern UI/UX
-- 
+
   Tech Stack
 - Frontend: HTML, CSS, JavaScript, Java  
 - Deployment: GitHub Pages
